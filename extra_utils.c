@@ -56,6 +56,7 @@ void printTable(){
       printf("------------------------------\n");
 }
 
+
 /* External functions (using mutex to keep the queue thread safe)*/
 
 /**
@@ -93,7 +94,6 @@ int addElement(server_t element){
         //add element to table
         table[table_size] = element;
         table_size ++;  
-        printf("Table Size: %d --------------------\n", table_size);        
     }
     //unlock the table
     pthread_mutex_unlock(&m_table);
@@ -106,7 +106,7 @@ int addElement(server_t element){
  * @return element from the head of the queue
 **/
 int getElement(server_t *element, char host[MAXHOSTNAME]){
-    printf("GET Element: %s\n", host);
+    // printf("GET Element: %s\n", host);
     //locks the queue
     pthread_mutex_lock(&m_table);
     
@@ -118,7 +118,7 @@ int getElement(server_t *element, char host[MAXHOSTNAME]){
     }
     //unlocks the queue
     pthread_mutex_unlock(&m_table);    
-    printf("GET Element: %s result=%d\n", host,index);
+    // printf("GET Element: %s result=%d\n", host,index);
     return index;
 }
 
