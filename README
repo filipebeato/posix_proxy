@@ -1,3 +1,5 @@
+Multi (posix) thread proxy implementation in C
+
 The Makefile here is for Linux.  
  - If compiling on Solaris, add "-lsocket".
  - For mac/os remove "-lnsl" (i.e., remove $(xFlag))
