@@ -8,6 +8,7 @@
 #ifndef EXTRAUTILS_H
 #define EXTRAUTILS_H
 
+// constant for max connections
 #define NCONNECTIONS       2
 #define MAXHOSTNAME     2560
 #define MAX_REQ          100

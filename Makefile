@@ -1,3 +1,6 @@
+# MakeFile for anonymous proxy
+# Filipe <mail@filipe.pt>
+
 CC = gcc
 CFLAGS = -lpthread -v
 xFlag = -lnsl  

@@ -5,7 +5,6 @@
 *  Written by Filipe <mail@filipe.pt>
 **/
 
-
 #include <limits.h>
 #include <signal.h>
 #include <string.h>
@@ -17,6 +16,8 @@
 #include "utils.h"
 #include "extra_utils.h"
 
+
+// Define constants
 #define MAX_HEADER     20480
 #define MAX_LINE        2560
 #define BSIZ            8192

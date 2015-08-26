@@ -1,5 +1,7 @@
-/* Utility functions */
-
+/***
+*  Utility functions header
+*  utils.h
+**/
 
 #ifndef NETWORK_H
 #define NETWORK_H
